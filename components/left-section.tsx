@@ -6,14 +6,14 @@ import { Indicators } from "./animators/indicators";
 
 export function LeftSection() {
   return (
-    <div className="relative flex w-full flex-col bg-background px-20 pb-15 pt-20">
+    <div className="relative flex w-full flex-col bg-background pb-15 xl:px-24 xl:pt-12 2xl:px-20 2xl:pt-20">
       <div className="glow absolute opacity-50"></div>
-      <div className="flex flex-col gap-15">
+      <div className="flex flex-col xl:gap-10 2xl:gap-15">
         <Icons.nifty />
 
         <AnimatedText />
       </div>
-      <div className="flex flex-1 flex-col justify-end xl:gap-4 2xl:gap-15 ">
+      <div className="flex flex-1 flex-col justify-end gap-8 2xl:gap-15 ">
         <div className="flex">
           <Image
             src="/rings.png"

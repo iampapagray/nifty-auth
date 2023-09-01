@@ -27,7 +27,7 @@ export function AnimatedText(){
           <h1
             key={i}
             className={cn(
-              "font-sans text-5xl font-bold leading-tight tracking-[-0.96px]",
+              "font-sans text-4xl font-bold leading-tight tracking-[-0.96px] 2xl:text-5xl",
               i == activeIndex ? 'text-white':'text-[#667085]'
             )}
           >

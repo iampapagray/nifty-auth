@@ -45,6 +45,7 @@ module.exports = {
       },
       spacing: {
         15: '60px',
+        30: '120px',
       }
     },
   },
