@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 0%;
     --foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -74,8 +74,14 @@
   * {
     @apply border-border;
   }
+  p {
+    @apply m-0 p-0;
+  }
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  .glow {
+    @apply w-[325px] h-[325px] left-[-87px] top-[-87px] rounded-full bg-[#4D53BB] blur-[200px];
   }
 }
