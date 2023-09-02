@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 export function RightSection() {
   return (
-    <div className="relative bg-red-500 p-10 font-sans lg:px-30 lg:py-20 2xl:py-30">
+    <div className="relative bg-red-500 p-10 font-sans lg:px-20 lg:py-20 2xl:p-30">
       <div className="flex flex-col bg-white p-14">
         <Icons.nifty className="flex lg:hidden" />
 
