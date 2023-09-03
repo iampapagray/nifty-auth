@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export function RightSection() {
   return (
-    <div className="relative p-10 font-sans lg:p-20 2xl:p-30">
-      <div className="flex flex-col bg-white p-14">
+    <div className="relative h-screen  flex items-center px-10 font-sans  lg:px-20 2xl:px-30">
+      <div className="flex flex-col  p-14">
         <Icons.nifty className="flex lg:hidden" />
 
         <h2
