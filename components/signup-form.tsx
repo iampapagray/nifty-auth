@@ -114,7 +114,7 @@ export function SignupForm() {
             control={form.control}
             name="agree"
             render={({ field }) => (
-              <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+              <FormItem className="flex flex-row items-start space-x-2 space-y-0">
                 <FormControl>
                   <Checkbox
                     checked={field.value}
@@ -122,8 +122,8 @@ export function SignupForm() {
                     className="rounded"
                   />
                 </FormControl>
-                <div className="space-y-1 leading-none">
-                  <FormLabel className="text-sm font-medium text-[#344054]">
+                <div className="space-y-1 leading-none  ">
+                  <FormLabel className="text-sm font-medium leading-none text-[#344054]">
                     Creating an account means you agree with our{" "}
                     <Link href="https://iampapagray.com" target="_blank">
                       Terms of Service
@@ -138,13 +138,15 @@ export function SignupForm() {
             )}
           />
 
-          <Button
-            variant={"default"}
-            type="submit"
-            className="mt-6 h-fit w-full px-[18px] py-3 text-base font-semibold"
-          >
-            Create account
-          </Button>
+          <div className="pt-1">
+            <Button
+              variant={"default"}
+              type="submit"
+              className="h-fit w-full px-[18px] py-3 text-base font-semibold"
+            >
+              Create account
+            </Button>
+          </div>
         </form>
       </Form>
     </div>
