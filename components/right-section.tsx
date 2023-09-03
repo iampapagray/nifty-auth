@@ -6,16 +6,16 @@ import Link from "next/link";
 
 export function RightSection() {
   return (
-    <div className="relative h-screen  flex items-center px-10 font-sans  lg:px-20 2xl:px-30">
-      <div className="flex flex-col  p-14">
-        <Icons.nifty className="flex lg:hidden" />
+    <div className="relative flex h-screen px-0 pt-10 font-sans lg:items-center lg:px-20 2xl:px-30">
+      <div className="flex flex-col  px-[30px] lg:p-14">
+        <Icons.nifty className="my-8 flex lg:hidden" />
 
         <h2
-          className="scroll-m-20 text-4xl font-bold leading-tight tracking-[-0.72px] text-[#171936]"
+          className="scroll-m-20 text-3xl font-bold leading-tight tracking-[-0.72px] text-[#171936] lg:text-4xl"
         >
           Get Started
         </h2>
-        <p className="pt-2.5 text-lg leading-normal text-[#667085]">
+        <p className="pt-2.5 text-base leading-normal text-[#667085] lg:text-lg">
           Personal finance shouldn&apos;t be confusing.{"\n"}Start your journey to financial freedom.
         </p>
 
