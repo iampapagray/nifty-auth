@@ -7,7 +7,7 @@ import { RightSection } from "@/components/right-section"
 
 export default function IndexPage() {
   return (
-    <section className="container mx-auto flex h-screen w-full lg:overflow-hidden bg-white px-0">
+    <section className="container mx-auto flex h-screen w-full bg-white px-0 lg:overflow-hidden">
       <div className="hidden flex-1 md:flex">
         <LeftSection />
       </div>
