@@ -84,4 +84,8 @@
   .glow {
     @apply w-[325px] h-[325px] left-[-87px] top-[-87px] rounded-full bg-[#4D53BB] blur-[200px];
   }
+  .without-ring {
+    @apply focus:ring-0 focus:ring-offset-0 focus-visible:ring-0;
+  }
+
 }

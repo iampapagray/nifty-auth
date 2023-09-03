@@ -40,7 +40,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           {/* enableSystem */}
-          <ThemeProvider attribute="class" defaultTheme="system">
+          <ThemeProvider attribute="class" defaultTheme="light">
             <div className="relative flex min-h-screen flex-col bg-black">
               <div className="flex-1 xl:px-20">{children}</div>
             </div>
