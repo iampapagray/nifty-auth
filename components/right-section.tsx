@@ -29,7 +29,7 @@ export function RightSection() {
         <div className="flex justify-between py-6">
           <Button
             variant="outline"
-            className="flex h-fit gap-[12px] px-4 py-3 font-semibold"
+            className="flex h-fit gap-[12px] px-2 py-3 font-semibold text-[#344054]"
           >
             <Image src={"/google.svg"} alt="Google" height={24} width={24} />
             Sign in with Google
