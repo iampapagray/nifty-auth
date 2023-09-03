@@ -58,7 +58,9 @@ export function SignupForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#344054]">Name</FormLabel>
+                <FormLabel className="font-medium text-[#344054]">
+                  Name
+                </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="John Doe"
@@ -75,7 +77,9 @@ export function SignupForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#344054]">Email</FormLabel>
+                <FormLabel className="font-medium text-[#344054]">
+                  Email
+                </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="johndoe@email.com"
@@ -92,7 +96,9 @@ export function SignupForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-[#344054]">Password</FormLabel>
+                <FormLabel className="font-medium text-[#344054]">
+                  Password
+                </FormLabel>
                 <FormControl>
                   <Input
                     placeholder="8+ character"
@@ -117,7 +123,7 @@ export function SignupForm() {
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel className="text-sm text-[#344054] ">
+                  <FormLabel className="text-sm font-medium text-[#344054]">
                     Creating an account means you agree with our{" "}
                     <Link href="https://iampapagray.com" target="_blank">
                       Terms of Service

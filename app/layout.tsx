@@ -40,12 +40,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           {/* enableSystem */}
-          <ThemeProvider attribute="class" defaultTheme="light">
-            <div className="relative flex min-h-screen flex-col">
-              <div className="flex-1 xl:px-20">{children}</div>
-            </div>
-            <TailwindIndicator />
-          </ThemeProvider>
+          {/* <ThemeProvider attribute="class" defaultTheme="light"> */}
+          <div className="relative flex min-h-screen flex-col">
+            <div className="flex-1 xl:px-20">{children}</div>
+          </div>
+          <TailwindIndicator />
+          {/* </ThemeProvider> */}
         </body>
       </html>
     </>
