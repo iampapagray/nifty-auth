@@ -20,14 +20,14 @@ export function RightSection() {
         </p>
 
         <div className="flex justify-between py-6">
-          <Button variant="outline" className="flex gap-[12px] h-fit px-4 py-3">
+          <Button variant="outline" className="flex h-fit gap-[12px] px-4 py-3">
             <Image src={"/google.svg"} alt="Google" height={24} width={24} />
             Sign in with Google
           </Button>
-          <Button className="bg-black p-3 h-fit">
+          <Button className="h-fit bg-black p-3">
             <Image src={"/apple.svg"} alt="Apple" height={24} width={24} />
           </Button>
-          <Button className="bg-[#1877F2] p-3 h-fit hover:bg-[#1877F2]">
+          <Button className="h-fit bg-[#1877F2] p-3 hover:bg-[#1877F2]">
             <Image
               src={"/facebook.svg"}
               alt="Facebook"
