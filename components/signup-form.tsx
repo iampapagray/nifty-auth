@@ -108,7 +108,7 @@ export function SignupForm() {
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel className='text-[#344054] text-sm '>
+                  <FormLabel className='text-sm text-[#344054] '>
                     Creating an account means you agree with our {' '}
                     <Link href="https://iampapagray.com" target='_blank'>Terms of Service</Link> and {' '}
                     <Link href="https://iampapagray.com" target='_blank'>Privacy policy</Link>
@@ -118,7 +118,7 @@ export function SignupForm() {
             )}
           />
 
-          <Button variant={'default'} type="submit" className="mt-6 py-3 px-[18px] w-full">
+          <Button variant={'default'} type="submit" className="mt-6 w-full px-[18px] py-3">
             Create account
           </Button>
         </form>
