@@ -35,13 +35,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            "min-h-screen bg-white font-sans antialiased lg:bg-black",
             fontSans.variable
           )}
         >
           {/* enableSystem */}
           <ThemeProvider attribute="class" defaultTheme="light">
-            <div className="relative flex min-h-screen flex-col bg-white lg:bg-black">
+            <div className="relative flex min-h-screen flex-col">
               <div className="flex-1 xl:px-20">{children}</div>
             </div>
             <TailwindIndicator />
