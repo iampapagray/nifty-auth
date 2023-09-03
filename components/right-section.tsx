@@ -20,19 +20,20 @@ export function RightSection() {
         </p>
 
         <div className="flex justify-between py-6">
-          <Button variant="outline" className="flex gap-[12px] px-4 py-3">
+          <Button variant="outline" className="flex gap-[12px] h-fit px-4 py-3">
             <Image src={"/google.svg"} alt="Google" height={24} width={24} />
             Sign in with Google
           </Button>
-          <Button className="bg-black p-3">
+          <Button className="bg-black p-3 h-fit">
             <Image src={"/apple.svg"} alt="Apple" height={24} width={24} />
           </Button>
-          <Button className="bg-[#1877F2] p-3 hover:bg-[#1877F2]">
+          <Button className="bg-[#1877F2] p-3 h-fit hover:bg-[#1877F2]">
             <Image
               src={"/facebook.svg"}
               alt="Facebook"
               height={24}
               width={24}
+              className="h-6 w-6"
             />
           </Button>
         </div>
@@ -43,7 +44,7 @@ export function RightSection() {
           <SignupForm />
         </div>
 
-        <p className="pt-2.5 text-center text-[#98A2B3]">
+        <p className="pb-6 pt-2.5 text-center text-[#98A2B3]">
           Already have an account?{" "}
           <Link href={"#"} className="text-[#344054]">
             Sign in

@@ -1,27 +1,36 @@
-'use client'
+"use client"
 
-import * as z from 'zod'
+import Link from "next/link"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
-import { useForm } from 'react-hook-form'
-import { Input } from './ui/input'
-import { Checkbox } from './ui/checkbox'
-import Link from 'next/link'
-import { Button } from './ui/button'
+import { useForm } from "react-hook-form"
+import * as z from "zod"
+
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form"
+
+import { Button } from "./ui/button"
+import { Checkbox } from "./ui/checkbox"
+import { Input } from "./ui/input"
 
 const signupSchema = z.object({
   name: z.string().min(3, {
-    message: "Name must be at least 3 characters."
+    message: "Name must be at least 3 characters.",
   }),
   email: z.string().email({
     message: "Email is required",
   }),
   password: z.string().min(8, {
-    message: "Password must be at least 8 characters"
+    message: "Password must be at least 8 characters",
   }),
   agree: z.boolean().default(false),
 })
-
 
 export function SignupForm() {
   const form = useForm<z.infer<typeof signupSchema>>({
@@ -30,7 +39,7 @@ export function SignupForm() {
       name: "",
       email: "",
       password: "",
-      agree: false
+      agree: false,
     },
   })
 
@@ -41,7 +50,7 @@ export function SignupForm() {
   }
 
   return (
-    <div className='relative'>
+    <div className="relative">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
           <FormField
@@ -49,7 +58,7 @@ export function SignupForm() {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className='text-[#344054]'>Name</FormLabel>
+                <FormLabel className="text-[#344054]">Name</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="John Doe"
@@ -66,7 +75,7 @@ export function SignupForm() {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className='text-[#344054]'>Email</FormLabel>
+                <FormLabel className="text-[#344054]">Email</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="johndoe@email.com"
@@ -83,7 +92,7 @@ export function SignupForm() {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className='text-[#344054]'>Password</FormLabel>
+                <FormLabel className="text-[#344054]">Password</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="8+ character"
@@ -104,21 +113,30 @@ export function SignupForm() {
                   <Checkbox
                     checked={field.value}
                     onCheckedChange={field.onChange}
-                    className='rounded'
+                    className="rounded"
                   />
                 </FormControl>
                 <div className="space-y-1 leading-none">
-                  <FormLabel className='text-sm text-[#344054] '>
-                    Creating an account means you agree with our {' '}
-                    <Link href="https://iampapagray.com" target='_blank'>Terms of Service</Link> and {' '}
-                    <Link href="https://iampapagray.com" target='_blank'>Privacy policy</Link>
+                  <FormLabel className="text-sm text-[#344054] ">
+                    Creating an account means you agree with our{" "}
+                    <Link href="https://iampapagray.com" target="_blank">
+                      Terms of Service
+                    </Link>{" "}
+                    and{" "}
+                    <Link href="https://iampapagray.com" target="_blank">
+                      Privacy Policy
+                    </Link>
                   </FormLabel>
                 </div>
               </FormItem>
             )}
           />
 
-          <Button variant={'default'} type="submit" className="mt-6 w-full px-[18px] py-3">
+          <Button
+            variant={"default"}
+            type="submit"
+            className="mt-6 w-full px-[18px] py-3 text-base"
+          >
             Create account
           </Button>
         </form>
