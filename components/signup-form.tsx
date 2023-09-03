@@ -135,7 +135,7 @@ export function SignupForm() {
           <Button
             variant={"default"}
             type="submit"
-            className="h-fit mt-6 w-full px-[18px] py-3 text-base"
+            className="mt-6 h-fit w-full px-[18px] py-3 text-base"
           >
             Create account
           </Button>

@@ -9,7 +9,14 @@ export function RightSection() {
   return (
     <div className="relative flex h-screen px-0 pt-10 font-sans lg:items-center lg:px-20 2xl:px-30">
       <div className="flex flex-col px-[30px] lg:p-14">
-        <Icons.nifty className="mb-8 flex h-8 w-8 lg:hidden" />
+        {/* <Icons.nifty className="mb-8 flex h-8 w-8 lg:hidden" /> */}
+        <Image
+          src={"/logo.svg"}
+          alt="logo"
+          height={32}
+          width={32}
+          className="mb-8 h-8 w-8 flex lg:hidden"
+        />
 
         <h2 className="scroll-m-20 text-3xl font-bold leading-tight tracking-[-0.72px] text-[#171936] lg:text-4xl">
           Get Started
