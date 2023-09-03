@@ -15,7 +15,7 @@ export function RightSection() {
           alt="logo"
           height={32}
           width={32}
-          className="mb-8 h-8 w-8 flex lg:hidden"
+          className="mb-8 flex h-8 w-8 lg:hidden"
         />
 
         <h2 className="scroll-m-20 text-3xl font-bold leading-tight tracking-[-0.72px] text-[#171936] lg:text-4xl">
@@ -27,7 +27,10 @@ export function RightSection() {
         </p>
 
         <div className="flex justify-between py-6">
-          <Button variant="outline" className="flex h-fit gap-[12px] px-4 py-3">
+          <Button
+            variant="outline"
+            className="flex h-fit gap-[12px] px-4 py-3 font-semibold"
+          >
             <Image src={"/google.svg"} alt="Google" height={24} width={24} />
             Sign in with Google
           </Button>
