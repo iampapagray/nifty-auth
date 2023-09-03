@@ -95,7 +95,7 @@ export function SignupForm() {
             control={form.control}
             name="password"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="space-y-1.5">
                 <FormLabel className="font-medium text-[#344054]">
                   Password
                 </FormLabel>
